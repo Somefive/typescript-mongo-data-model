@@ -1,0 +1,37 @@
+{
+  "name": "typescript-mongo-data-model",
+  "version": "0.0.0",
+  "description": "A mongodb data model based on typescript-data-model.",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "rm -rf dist/ && tsc",
+    "clean": "rm -rf dist/",
+    "sample": "rm -rf sample/dist/ && tsc -p sample/ && node sample/dist/sample/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Somefive/typescript-mongo-data-model.git"
+  },
+  "keywords": [
+    "typescript",
+    "model",
+    "data",
+    "data-model",
+    "mongodb",
+    "mongo",
+    "typescript-data-model"
+  ],
+  "author": "Somefive <Somefive@foxmail.com> (https://www.somefive.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Somefive/typescript-mongo-data-model/issues",
+    "email": "Somefive@foxmail.com"
+  },
+  "typings": "./dist/index.d.ts",
+  "homepage": "https://github.com/Somefive/typescript-mongo-data-model#readme",
+  "dependencies": {
+    "@types/mongodb": "^2.2.8",
+    "mongodb": "^2.2.30",
+    "typescript-data-model": "^0.1.3"
+  }
+}
